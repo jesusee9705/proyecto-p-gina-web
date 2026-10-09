@@ -1,0 +1,151 @@
+{box-sizing: border-box;
+}
+h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+h4 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: rgb(255, 255, 255);
+    background-image: url(Media/CafeteriaHERo2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#Menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 130vh;
+    color: rgb(255, 255, 255);
+    background-image: url(Media/CafeteriaHERO3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.carta1 {
+    font-size: 15px;
+    color: rgb(1, 0, 0);
+    width: 30%;
+    height: 30%;
+    background: rgba(191, 22, 22, 0.7);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-image: url(Media/CafeteriaHERo8.jpg);
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    bottom: 100px; 
+    top: auto;
+    right: 400px; 
+}
+.carta2 {
+    font-size: 15px; 
+    color: rgb(1, 0, 0);
+    width: 30%;
+    height: 30%;
+    background: rgba(7, 85, 7, 0.7);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-image: url(Media/CafeteriaHERo8.jpg);
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    bottom: 100px; 
+    top: auto;
+    right: 400px;
+}
+.carta3 {
+    font-size: 15px;
+    color: rgb(1, 0, 0);
+    width: 30%;
+    height: 30%;
+    background: rgba(82, 82, 231, 0.7);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-image: url(Media/CafeteriaHERo8.jpg);
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    bottom: 100px;
+    top: auto;
+    right: 400px;
+
+ 
+}
+.images {
+    display: flex;
+    position: relative;
+    bottom: 960px;
+    left: 1000px;
+}
+.images2 {
+    display: flex;
+    position: relative;
+    bottom: 940px;
+    left: 1000px;
+}
+.images3 {
+    display: flex;
+    position: relative;
+    bottom: 930px;
+    left: 1000px;
+}
+
+
+
+button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+header {
+    background: #333;
+    color: #ececf1;
+    padding: 10px 0;
+    text-align: left;
+    front-size: 60px;
+}
+header.logo {
+    font-size: 50px;
+    font-weight: right;
+    color: rgb(255, 255, 255);
+    text-align: right; 
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+}
+
