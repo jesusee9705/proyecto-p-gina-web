@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login {
+            background: white;
+            padding: 30px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        #mensaje {
+            text-align: center;
+            margin-top: 15px;
+            color: red;
+        }
+
+        #contenido {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- LOGIN -->
+    <div class="login" id="login">
+        <h2>Iniciar sesión</h2>
+
+        <input
+            type="text"
+            id="usuario"
+            placeholder="Usuario"
+        >
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Contraseña"
+        >
+
+        <button onclick="iniciarSesion(); window.location.href='index.html'">
+            Entrar
+        </button>
+
+        <p id="mensaje"></p>
+    </div>
+
+
+    <!-- CONTENIDO DE LA PÁGINA -->
+    <div id="contenido">
+        <h1>Bienvenido</h1>
+        <p>Has iniciado sesión correctamente.</p>
+
+        <button onclick="cerrarSesion()">
+            Cerrar sesión
+        </button>
+    </div>
+
+
+    <script>
+        function iniciarSesion() {
+
+            const usuario = document.getElementById("usuario").value;
+            const password = document.getElementById("password").value;
+
+            // Usuario y contraseña de ejemplo
+            const usuarioCorrecto = "admin";
+            const passwordCorrecta = "1234";
+
+            if (
+                usuario === usuarioCorrecto &&
+                password === passwordCorrecta
+            ) {
+                document.getElementById("login").style.display = "none";
+                document.getElementById("contenido").style.display = "block";
+            } else {
+                document.getElementById("mensaje").textContent =
+                    "Usuario o contraseña incorrectos";
+            }
+        }
+
+        function cerrarSesion() {
+            document.getElementById("contenido").style.display = "none";
+            document.getElementById("login").style.display = "block";
+
+            document.getElementById("usuario").value = "";
+            document.getElementById("password").value = "";
+        }
+    </script>
+   
+
+</body>
+</html>
